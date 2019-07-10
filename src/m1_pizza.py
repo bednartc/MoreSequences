@@ -69,13 +69,11 @@ def run_test_generate_points_on_circle():
     # ------------------------------------------------------------------
 
     expected = [rg.Point(125.0, 50.0),  # All numbers are approximate.
-                rg.Point(112.5, 71.7),
-                rg.Point(87.5, 71.7),
+                rg.Point(100.0, 75.0),
                 rg.Point(75.0, 50.0),
-                rg.Point(87.5, 28.3),
-                rg.Point(112.5, 28.3)]
+                rg.Point(100.0, 25.0),]
     circle = rg.Circle(rg.Point(100, 50), 25)
-    answer = generate_points_on_circle(circle, 6)
+    answer = generate_points_on_circle(circle, 4)
 
     print('Expected:', expected)
     print('Actual:  ', answer)
